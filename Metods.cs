@@ -9,7 +9,7 @@ public static int []CreateArray (int size)
 }
 // 1. Создание массива double
 
-public static double []CreateArray (int size)
+public static double []CreateArrayDouble (int size)
 {
   return new double[size];
 }
@@ -342,6 +342,18 @@ public static void PrintMaxMinusMin(double max, double min)
   double result = max - min;
   Console.WriteLine(result);
 }
+
+//Суммирование количества чисел больше 0 и вывод
+public static void SummPositivNumbers(int []Array)
+{
+  int summ = 0;
+  for (int i = 0; i < Array.Length; i++)
+  {
+    if (Array[i] > 0) summ += 1;
+  }
+  Console.WriteLine("Количество чисел больше нуля: " + summ);
+}
+
 }
 
 
